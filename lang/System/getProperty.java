@@ -8,6 +8,8 @@ public class getProperty {
 
   public static void main(String[] argv) {
 
+  //   «Predefined» properties
+
     p("file.separator"  ); //   "/" on UNIX and "\" on Windows.
     p("java.class.path" ); //   Try   java -cp foo:bar:. getProperty   to see effect
     p("java.home"       ); //   Installation directory for JRE
@@ -22,6 +24,11 @@ public class getProperty {
     p("user.dir"        ); //   Working directory
     p("user.home"       ); //   Home directory
     p("user.name"       );
+
+ //    Properties passed with the -D flag
+  
+    p("foo.bar"         ); //   java -Dfoo.bar=something getProperty 
+
 
   }
 
