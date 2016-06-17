@@ -1,0 +1,8 @@
+#!/bin/sh
+
+VERSION=3-3.4
+wget http://www-us.apache.org/dist/commons/lang/binaries/commons-lang${VERSION}-bin.tar.gz
+tar xzvf commons-lang${VERSION}-bin.tar.gz commons-lang${VERSION}/commons-lang${VERSION}.jar
+mv       commons-lang${VERSION}/commons-lang${VERSION}.jar commons-lang3.jar
+rmdir    commons-lang${VERSION}
+rm       commons-lang${VERSION}-bin.tar.gz
