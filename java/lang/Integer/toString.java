@@ -3,7 +3,7 @@ public class toString {
   public static void main(String[] argv) {
 
     int i = 42;
-    String s = Integer.toString(42);
+    String s = Integer.toString(i);
     System.out.println(s);
 
     alternatives();
